@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Large Model Weights and Binaries (>100MB cannot be pushed to GitHub)
+models/*.keras
+models/*.h5
+models/*.savedmodel/
+checkpoints/
+
+# Datasets and Archive Files (HAM10000 images are >2.5 GB)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+
+# IDE & OS Specific
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Streamlit Local Runtime
+.streamlit/secrets.toml
+
+# Logs & Metrics Temporary Files
+logs/
+*.log
